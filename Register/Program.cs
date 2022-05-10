@@ -15,14 +15,14 @@ if (valet== "a")
    
     
 }
-else if (valet== "")
+else if (valet== "s")
 {
     skrivUt();
 }
 
 void skrivUt()
 {
-    foreach (var worker in register)
+    foreach (worker worker in register)
     {
         Console.WriteLine(worker);  
     }
@@ -43,3 +43,6 @@ void addWorker()
     {
         worker worker = new(name, salary);
         register.Add(worker);
+    }
+
+}
